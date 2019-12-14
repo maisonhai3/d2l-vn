@@ -1287,7 +1287,7 @@ that $n\times n$ matrices scale $n$-dimensional volumes.
 ## Tensors and Common Linear Algebra Operations
 -->
 
-## *dịch tiêu đề phía trên*
+## Tensor và các phép toán Đại Số Tuyến Tính thông thường
 
 <!--
 In :numref:`sec_linear-algebra` the concept of tensors was introduced.
@@ -1297,7 +1297,10 @@ and see how it can provide a unified view
 on a number of matrix and vector operations.
 -->
 
-*dịch đoạn phía trên*
+Khái niệm về tensor được giới thiệu trong :numref:`sec_linear-algebra`.
+Trong mục này, chúng ta sẽ đi sâu hơn về việc tổng quát hóa phép nhân ma trận cho tensor, và xem việc này cung cấp một cái nhìn nhất quán với một số phép toán cho ma trận và vector như thế nào.
+
+<!-- NOTE: dịch 'tensor contraction' và thêm vào glossary -->
 
 <!--
 With matrices and vectors we knew how to multiply them to transform data.
@@ -1305,7 +1308,9 @@ We need to have a similar definition for tensors if they are to be useful to us.
 Think about matrix multiplication:
 -->
 
-*dịch đoạn phía trên*
+Ta đã biết cahcs nhân ma trận và vector để biến đối dữ liệu.
+Chúng ta cần một định nghĩa tương tự cho tensor nếu chúng hữu ích.
+Xét phép nhân ma trận:
 
 $$
 \mathbf{C} = \mathbf{A}\mathbf{B},
@@ -1315,7 +1320,7 @@ $$
 or equivalently
 -->
 
-*dịch đoạn phía trên*
+hoặc tương đương
 
 $$ c_{i, j} = \sum_{k} a_{i, k}b_{k, j}.$$
 
@@ -1327,7 +1332,9 @@ so we need specify exactly which indices we want to sum over.
 For instance we could consider
 -->
 
-*dịch đoạn phía trên*
+Biểu thức này có thể được áp dụng cho tensor.
+Với tensor, không có trường hợp nào của thành phần nào cần lấy tổng một cách tổng quát, bởi vậy ta cần chỉ ra chính xác chỉ số nào cần được lấy tổng theo.
+Chẳng hạn, ta có thể xét
 
 $$
 y_{il} = \sum_{jk} x_{ijkl}a_{jk}.
@@ -1339,7 +1346,8 @@ It can represent a far more flexible family of transformations
 that matrix multiplication alone.
 -->
 
-*dịch đoạn phía trên*
+Phép biến đổi này được gọi là *tensor contraction* (cần dịch).
+Nó có thể biểu diễn ... (cần dịch)
 
 <!--
 As a often-used notational simplification,
@@ -1350,7 +1358,9 @@ where the summation is implicitly taken over all repeated indices.
 This gives the compact expression:
 -->
 
-*dịch đoạn phía trên*
+<!-- Đoạn này hơi khó hiểu -->
+Như một cách đơn giản hóa ký hiệu thường dùng, ta có thể thấy rằng tổng được lấy chính xác theo các chỉ số xuất hiện hiều hơn một lần tỏng biểu thức, bởi vậy những người thường dùng *ký hiệu Einstein* ở đó tổng được ngầm hiểu lấy theo tất cả các chỉ số được lặp lại.
+Việc này tạo ra một biểu thức thu gọn:
 
 $$
 y_{il} = x_{ijkl}a_{jk}.
